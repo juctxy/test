@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Webpage</title>
+
+    <style>
+        /* 1. Styling the image to be 80% of its container width */
+        img {
+            width: 80%; /* Makes the image take up 80% of the screen/body width */
+            height: auto; /* Ensures the image maintains its original proportion */
+            display: block; /* Makes the image a block-level element */
+            margin: 0 auto; /* Centers the block-level image */
+            border: 3px solid #3498db; /* Optional: adds a nice border */
+        }
+        
+        /* 2. Optional: Targeting a specific element with a class */
+        .main-heading {
+            color: darkred;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <body>
-    <h1>My Page with an Image</h1>
+    <h1 class="main-heading">My Page with an Image</h1>
 
-    <img src="images/premium_photo-1690579805307-7ec030c75543.jpg">
+    <img src="images/premium_photo-1690579805307-7ec030c75543.jpg" 
+         alt="A photo that looks great on the webpage">
     
-    <p>The image above is loaded from the 'images' subfolder.</p>
-        
-</body>
+    <p>The image above is loaded from the 'images' subfolder and styled using the **internal stylesheet**.</p>
+    
     <h1>Hello, World!</h1>
     <p>This is a paragraph in the body of the document.</p>
     <a href="https://www.example.com">Visit Example Website</a>
